@@ -14,8 +14,11 @@ export function Counter() {
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState('2');
 
+  // See performance consideration: https://react-redux.js.org/api/hooks#performance
   return (
-    <div>
+    <div className={styles.withBorder}>
+      <p>Counter With Hooks</p>
+
       <div className={styles.row}>
         <button
           className={styles.button}

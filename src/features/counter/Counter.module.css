@@ -73,3 +73,7 @@
   opacity: 1;
   transition: 0s
 }
+
+.withBorder {
+  border-style: ridge;
+}
